@@ -100,6 +100,7 @@ const Navbar = () => {
             gap: 3,
             opacity: { xs: 0, md: 1 },
             visibility: { xs: "hidden", md: "visible" },
+            width: { xs: 0, md: "auto" },
           }}
         >
           {/* mode switch */}
