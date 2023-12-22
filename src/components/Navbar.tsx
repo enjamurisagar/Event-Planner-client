@@ -54,15 +54,17 @@ const Navbar = () => {
         }}
       >
         <Typography>LOGO image</Typography>
-        {/* search */}
+        {/* search in desktop */}
         <Box
           display="flex"
           alignItems="center"
           sx={{
-            width: "15%",
+            width: { xs: 0, md: "15%" },
             position: "relative",
 
             opacity: { xs: 0, md: 1 },
+            visibility: { xs: "hidden", md: "visible" },
+
             // backgroundColor: "pink",
           }}
         >
@@ -92,8 +94,14 @@ const Navbar = () => {
             }}
           />
         </Box>
-        {/* location and user and switch*/}
-        <FlexAlignCenter sx={{ gap: 3, opacity: { xs: 0, md: 1 } }}>
+        {/* location and user and switch DESKTOP*/}
+        <FlexAlignCenter
+          sx={{
+            gap: 3,
+            opacity: { xs: 0, md: 1 },
+            visibility: { xs: "hidden", md: "visible" },
+          }}
+        >
           {/* mode switch */}
           <IconButton onClick={() => dispatch(setMode())}>
             {mode === "dark" ? (
