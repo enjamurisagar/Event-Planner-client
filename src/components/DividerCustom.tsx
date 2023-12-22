@@ -13,7 +13,7 @@ const DividerCustom = ({
       width="100%"
       sx={{
         backgroundColor:
-          mode === "light" ? palette.secondary.medium : palette.secondary.light,
+          mode === "light" ? palette.secondary.main : palette.secondary.light,
         height: "1px",
         transform: orientation === "vertical" ? "rotate(90deg) " : "rotate(0)",
       }}

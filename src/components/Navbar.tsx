@@ -46,7 +46,7 @@ const Navbar = () => {
           borderBottom:
             mode === "dark"
               ? `1px solid ${palette.secondary.light} `
-              : `1px solid ${palette.secondary.medium} `,
+              : `1px solid ${palette.secondary.dark} `,
           // backgroundColor: palette.background.default,
 
           px: { xs: 1, sm: 5, md: 15 },
@@ -113,7 +113,7 @@ const Navbar = () => {
           </Flex>
           {/* user */}
           <IconButton
-            sx={{ border: `1px solid ${palette.secondary.medium}` }}
+            sx={{ border: `1px solid ${palette.secondary.dark}` }}
             onClick={() => navigate("/auth")}
           >
             <PersonIcon
@@ -154,7 +154,7 @@ const Navbar = () => {
           borderBottom:
             mode === "dark"
               ? `1px solid ${palette.secondary.light} `
-              : `1px solid ${palette.secondary.medium} `,
+              : `1px solid ${palette.secondary.dark} `,
           gap: 1.5,
           p: openMenu ? 2 : 0,
           zIndex: 1,
@@ -219,9 +219,7 @@ const Navbar = () => {
           onClick={() => navigate("/auth")}
         >
           {user && (
-            <IconButton
-              sx={{ border: `1px solid ${palette.secondary.medium}` }}
-            >
+            <IconButton sx={{ border: `1px solid ${palette.secondary.dark}` }}>
               <PersonIcon
                 sx={{
                   fontSize: 20,
