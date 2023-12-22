@@ -17,5 +17,10 @@
     "jsx": "react-jsx",
     "noImplicitAny": false
   },
-  "include": ["src"]
+  "include": ["src", "createPalette.d.ts"],
+  "exclude": ["node_modules"]
 }
+
+//updated by me
+
+// added createPalette.d.ts in "include" and added "exclude"
