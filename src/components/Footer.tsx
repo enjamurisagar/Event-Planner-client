@@ -27,7 +27,7 @@ const Footer = () => {
         sx={{
           p: 5,
           pb: 1,
-          backgroundColor: palette.background.alt,
+          backgroundColor: palette.background.paper,
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,
           boxShadow: "2px 2px 10px",

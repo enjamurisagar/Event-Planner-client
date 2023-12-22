@@ -22,7 +22,7 @@ const Auth = () => {
         <Box
           width={{ xs: "90%", md: "35%" }}
           height="auto"
-          bgcolor={palette.background.alt}
+          bgcolor={palette.background.paper}
           p={3}
           sx={{
             borderRadius: 3,
@@ -74,7 +74,7 @@ const Auth = () => {
         <Box
           width={{ xs: "90%", md: "35%" }}
           height="auto"
-          bgcolor={palette.background.alt}
+          bgcolor={palette.background.paper}
           p={3}
           sx={{
             borderRadius: 3,
