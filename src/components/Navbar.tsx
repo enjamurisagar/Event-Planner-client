@@ -36,7 +36,9 @@ const Navbar = () => {
       sx={{
         position: "sticky",
         top: 0,
+
         backdropFilter: "blur(10px)",
+        zIndex: 100,
       }}
     >
       <FlexBetween

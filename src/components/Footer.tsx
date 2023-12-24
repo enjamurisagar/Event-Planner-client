@@ -26,7 +26,7 @@ const Footer = () => {
         height="auto"
         sx={{
           p: 5,
-          pb: 1,
+          pb: 8,
           backgroundColor: palette.background.paper,
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,

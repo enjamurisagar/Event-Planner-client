@@ -12,6 +12,8 @@ import Home from "./pages/Home";
 import Auth from "./pages/Auth";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import PageNotFound from "./components/PageNotFound";
+import FooterMenu from "./components/FooterMenu";
 
 //helpers
 // import Helper from "./helpers";
@@ -25,16 +27,10 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          width: "100%",
-          minHeight: "100vh",
-          justifyContent: "space-between",
-        }}
-      >
+      <Box>
+        {/* nav */}
         <Navbar />
+        {/* all routes */}
         <Box
           sx={{
             flexGrow: 1,
@@ -43,9 +39,14 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/auth" element={<Auth />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Box>
+        {/* footer */}
         <Footer />
+
+        {/* fixed options */}
+        <FooterMenu />
       </Box>
     </ThemeProvider>
   );
